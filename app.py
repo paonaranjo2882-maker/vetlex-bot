@@ -36,8 +36,8 @@ with st.sidebar:
     st.caption("Desarrollado con ❤️ para el sector veterinario en México.")
 
 # --- CUERPO PRINCIPAL ---
-st.title("⚖️ VetLex Bot: Inteligencia Sanitaria")
-st.subheader("Consulta la legislación de interés en Medicina Veterinaria.")
+st.title("⚖️ VetLex: Tu Aliado Legal Veterinario")
+st.subheader("Claridad normativa para el médico veterinario")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -52,7 +52,7 @@ def inicializar_sistema_chat():
         
         # Ajustamos el prompt para que use TODO el contexto del PDF sin autolimitarse
         prompt = ChatPromptTemplate.from_template("""
-        Eres VetLex, un asistente legal experto en legislación, regulaciones sanitarias y derecho veterinario en México.
+        "Eres VetLex, un asistente legal experto en legislación, regulaciones sanitarias y derecho veterinario en México.
         Responde la pregunta del usuario utilizando de forma exhaustiva la información del contexto proporcionado.
         Si el tema solicitado (como una campaña o norma específica) no viene mencionado en los documentos, explícale amablemente al usuario qué temas sí cubre el documento actual y qué norma externa necesitaría agregar.
         
