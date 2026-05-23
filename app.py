@@ -21,7 +21,7 @@ st.set_page_config(page_title="VetLex Bot", page_icon="⚖️", layout="wide")
 # --- BARRA LATERAL (DECORACIÓN) ---
 with st.sidebar:
     st.markdown("# 🐾 VetLex Bot")
-    st.markdown("### Asistente Legal Veterinario")
+    st.markdown("### Asistente legal veterinario")
     st.image("https://cdn-icons-png.flaticon.com/512/8993/8993711.png", width=100)
     st.write("---")
     
@@ -29,14 +29,14 @@ with st.sidebar:
     st.info("Leyes, normas oficiales mexicanas, regulaciones sanitarias y campañas de salud animal en México.")
     
     st.write("---")
-    if st.button("🗑️ Limpiar Historial de Chat"):
+    if st.button("Limpiar historial"):
         st.session_state.messages = []
         st.rerun()
         
     st.caption("Desarrollado con ❤️ para el sector veterinario en México.")
 
 # --- CUERPO PRINCIPAL ---
-st.title("⚖️ VetLex: Tu Aliado Legal Veterinario")
+st.title("⚖️ VetLex: Tu aliado legal veterinario (fase beta)")
 st.subheader("Claridad normativa para el médico veterinario")
 
 if "messages" not in st.session_state:
